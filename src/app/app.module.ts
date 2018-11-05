@@ -15,6 +15,7 @@ import { RandomUserService } from './services/random-user.service';
 import { IpsApiService } from './services/ips-api.service';
 import { ZorroExtModule } from './zorro-ext/lib/yzt-custom.module';
 import { API_BASE_URL } from './config/config';
+import { FullNamePipe } from './nz-table-demo/fullname.pipe';
 
 /** 配置 angular i18n **/
 registerLocaleData(zh);
@@ -23,7 +24,9 @@ registerLocaleData(zh);
 @NgModule({
   declarations: [
     AppComponent,
-    NzTableDemoComponent, YztTableDemoComponent
+    NzTableDemoComponent,
+    YztTableDemoComponent,
+    FullNamePipe
   ],
   imports: [
     BrowserModule,
